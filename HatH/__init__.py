@@ -13,7 +13,8 @@ class _HatHImg:
     def __init__(self, raw_str, gid, zfill_len = 3):
         self.id, _t, self.filename = raw_str.split()
         self.id = self.id.zfill(zfill_len)
-        self.hash, self.length, self.width, self.height, self.format = _t.split('-')
+        self.hash, l, w, h, self.format = _t.split('-')
+        self.length, self.width, self.height = map(lambda x:int(x),(l, w, h))
         self.hash10 = self.hash[:10]
         self.gid = gid
 
@@ -52,7 +53,7 @@ class HatH:
         self.upload_time = lines.pop(0)[14:]#'Upload Time:  '
         self.uploader_by = lines.pop(0)[14:]#Uploaded By:  '
         self.downloaded = lines.pop(0)[14:]#'Downloaded:   '
-        self.tags = lines.pop(0)[14:].split(',')#'Downloaded:   '
+        self.tags = lines.pop(0)[14:].split(',')#'Tags:         '
 
     def setpath(self, path = None):
         if path:
