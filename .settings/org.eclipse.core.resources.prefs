@@ -1,8 +1,14 @@
 eclipse.preferences.version=1
 encoding//HatH/Daemon.py=utf-8
 encoding//HatH/__init__.py=utf-8
-encoding//proxy/__init__.py=utf-8
-encoding//proxy/glype.py=utf-8
-encoding//proxy/knproxy.py=utf-8
+encoding//JsonRPC/RPClib.py=utf-8
+encoding//JsonRPC/Server.py=utf-8
+encoding//Proxy/__init__.py=utf-8
+encoding//Proxy/glype.py=utf-8
+encoding//Proxy/knproxy.py=utf-8
+encoding//ThreadPool/Exception.py=utf-8
+encoding//ThreadPool/Job.py=utf-8
+encoding//ThreadPool/Worker.py=utf-8
+encoding//ThreadPool/__init__.py=utf-8
 encoding/<project>=UTF-8
 encoding/cross_platform.py=utf-8

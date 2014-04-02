@@ -3,8 +3,6 @@
 # C extensions
 *.so
 .ehentai.cookie
-.tor
-proxies.txt
 
 # Packages
 *.egg
@@ -38,9 +36,4 @@ nosetests.xml
 .pydevproject
 
 #others
-make.bat
-xeHentai.exe
-ehentai-oschina.py
-test.py
-desktop.ini
-dependency
+*.zip

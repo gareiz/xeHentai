@@ -5,7 +5,7 @@
 #      fffonion        <fffonion@gmail.com>
 import random
 
-class Proxy():
+class Proxy:
     def __init__(self):
         self.enabled = True
         self.ip = None
@@ -18,7 +18,7 @@ class Proxy():
     def test_proxy(self):
         raise NotImplementedError("This method is empty")
 
-class ProxyPool():
+class ProxyPool:
     def __init__(self):
         self._pool = []
         self._forbidden_list = []

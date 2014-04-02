@@ -32,7 +32,7 @@ class knproxy(Proxy):
         _find = re.findall('^http[s]*://([^/]+)/([^\?]+)\?', self.base)
         _cfg = re.findall('\?.*?(\w+)=(\d+)[&|$]', self.base)
         if not _find or not _cfg:
-            raise ValueError('Cannot parse proxy path.')
+            raise ValueError('Cannot parse Porxy path.')
         self._server, self._script = _find[0]
         self._cfg_arg, self._cfg_value = _cfg[0]
         args = re.findall('(\w+)=([^&]+)', self.base)
